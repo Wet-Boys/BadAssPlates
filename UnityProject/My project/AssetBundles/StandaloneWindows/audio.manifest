@@ -1,0 +1,98 @@
+ManifestFileVersion: 0
+CRC: 817319733
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea7452c39b008c8ea2ab24fca162d2bf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/ifucover.ogg
+- Assets/Audio/BlindingLights.ogg
+- Assets/Audio/GetDown.ogg
+- Assets/Audio/Hype.ogg
+- Assets/Audio/Crossbounce.ogg
+- Assets/Audio/Haruhi.ogg
+- Assets/Audio/IntesityIntro.ogg
+- Assets/Audio/hi5.ogg
+- Assets/Audio/Business.ogg
+- Assets/Audio/Carson.ogg
+- Assets/Audio/BlindingLightsLoop.ogg
+- Assets/Audio/Athena_Emote_SadTrombone.ogg
+- Assets/Audio/hi2.ogg
+- Assets/Audio/Im A Cat.ogg
+- Assets/Audio/Crabby.ogg
+- Assets/Audio/Dance Therapy Loop.ogg
+- Assets/Audio/CrazyFeet.ogg
+- Assets/Audio/DevilSpawn.ogg
+- Assets/Audio/Distraction.ogg
+- Assets/Audio/HaruhiYoung.ogg
+- Assets/Audio/GangTorture.ogg
+- Assets/Audio/Fresh.ogg
+- Assets/Audio/BunnyHop.ogg
+- Assets/Audio/FullTilt.ogg
+- Assets/Audio/ArkDance.ogg
+- Assets/Audio/ElectroSwing.ogg
+- Assets/Audio/Dougie.ogg
+- Assets/Audio/GangnamStyle.ogg
+- Assets/Audio/DuckThisOneIdle.ogg
+- Assets/Audio/hi3.ogg
+- Assets/Audio/FlamencoLoop.ogg
+- Assets/Audio/Griddy.ogg
+- Assets/Audio/ItsDynamite.ogg
+- Assets/Audio/FancyFeet.ogg
+- Assets/Audio/Chika.ogg
+- Assets/Audio/FullTilt2.ogg
+- Assets/Audio/Butt.ogg
+- Assets/Audio/Fortnite default dance sound.ogg
+- Assets/Audio/DesertRivers.ogg
+- Assets/Audio/Cartwheelin.ogg
+- Assets/Audio/INEEDAMEDICBAG1.ogg
+- Assets/Audio/Dance Therapy Intro.ogg
+- Assets/Audio/Dabstand.ogg
+- Assets/Audio/HOW.ogg
+- Assets/Audio/Chugatone.ogg
+- Assets/Audio/Horny.ogg
+- Assets/Audio/Ifu.ogg
+- Assets/Audio/GalaxyObservatory3.ogg
+- Assets/Audio/ChugJug.ogg
+- Assets/Audio/hi4.ogg
+- Assets/Audio/BimBamBom.ogg
+- Assets/Audio/DontStart.ogg
+- Assets/Audio/Bee.ogg
+- Assets/Audio/Cirno.ogg
+- Assets/Audio/Goopie.ogg
+- Assets/Audio/Droop.ogg
+- Assets/Audio/Crackdown.ogg
+- Assets/Audio/ImDiamond.ogg
+- Assets/Audio/ByTheFire.ogg
+- Assets/Audio/IntensityLoop.ogg
+- Assets/Audio/Infectious.ogg
+- Assets/Audio/InfinidabIntro.ogg
+- Assets/Audio/Float.ogg
+- Assets/Audio/GGGG.ogg
+- Assets/Audio/hi1.ogg
+- Assets/Audio/GalaxyObservatory1.ogg
+- Assets/Audio/Breakin'.ogg
+- Assets/Audio/Frolic.ogg
+- Assets/Audio/Floss.ogg
+- Assets/Audio/Flamenco.ogg
+- Assets/Audio/GinyuForce.ogg
+- Assets/Audio/InfinidabLoop.ogg
+- Assets/Audio/Breakneck.ogg
+- Assets/Audio/AnkhaZone.ogg
+- Assets/Audio/GalaxyObservatory2.ogg
+- Assets/Audio/HondaStep.ogg
+- Assets/Audio/Extraterestrial.ogg
+- Assets/Audio/Ifu2.ogg
+- Assets/Audio/BlindingLightsIntro.ogg
+- Assets/Audio/DuckThisOne.ogg
+- Assets/Audio/BestMates.ogg
+- Assets/Audio/INEEDAMEDICBAG2.ogg
+Dependencies: []
