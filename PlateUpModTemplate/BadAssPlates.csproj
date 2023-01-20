@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GameLibsDir>..\.GameAssemblies\</GameLibsDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyFiles Include="$(GameLibsDir)*.dll" InProject="false" />
+        <None Remove="audio" />
+        <None Remove="audio 2" />
+        <None Remove="badassemotes" />
+        <None Remove="badassemotesifustage" />
+        <None Remove="braindamage" />
+        <None Remove="ifubundle" />
+        <None Remove="peaceextras" />
+        <None Remove="thunderanimation" />
+        <EmbeddedResource Include="audio" />
+        <EmbeddedResource Include="audio 2" />
+        <EmbeddedResource Include="badassemotes" />
+        <EmbeddedResource Include="badassemotesifustage" />
+        <EmbeddedResource Include="braindamage" />
+        <EmbeddedResource Include="ifubundle" />
+        <EmbeddedResource Include="peaceextras" />
+        <EmbeddedResource Include="thunderanimation" />
+        <Reference Include="@(AssemblyFiles)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    </ItemGroup>
+    
+</Project>

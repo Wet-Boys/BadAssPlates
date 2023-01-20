@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadAssPlates", "PlateUpModTemplate\BadAssPlates.csproj", "{6F8DE5BC-1266-4C32-8153-10037F201488}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{E7338676-FF99-4493-99BC-993F83F82359}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F8DE5BC-1266-4C32-8153-10037F201488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8DE5BC-1266-4C32-8153-10037F201488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8DE5BC-1266-4C32-8153-10037F201488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8DE5BC-1266-4C32-8153-10037F201488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7338676-FF99-4493-99BC-993F83F82359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7338676-FF99-4493-99BC-993F83F82359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A591521-A986-4A05-9B52-694C79A6A2E3}
+	EndGlobalSection
+EndGlobal
