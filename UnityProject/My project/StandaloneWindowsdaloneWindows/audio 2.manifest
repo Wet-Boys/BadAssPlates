@@ -1,0 +1,85 @@
+ManifestFileVersion: 0
+CRC: 1411225021
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 717157fea981d1b34f70ad70a8561728
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/starget5.ogg
+- Assets/Audio/starget7.ogg
+- Assets/Audio/Miku.ogg
+- Assets/Audio/Markiplier.ogg
+- Assets/Audio/SingleFurry.ogg
+- Assets/Audio/MyWorld.ogg
+- Assets/Audio/Poyo.ogg
+- Assets/Audio/Renegade.ogg
+- Assets/Audio/Orange Justice.ogg
+- Assets/Audio/KillMeBaby.ogg
+- Assets/Audio/StandingHere.ogg
+- Assets/Audio/NinjaStyle.ogg
+- Assets/Audio/Thanos.ogg
+- Assets/Audio/LetsDanceBoys.ogg
+- Assets/Audio/Stuck.ogg
+- Assets/Audio/PPmusic.ogg
+- Assets/Audio/Old SChool.ogg
+- Assets/Audio/Roflcopter.ogg
+- Assets/Audio/SuperIdol.ogg
+- Assets/Audio/UGotThat.ogg
+- Assets/Audio/Train.ogg
+- Assets/Audio/Never Gonna Give you Up.ogg
+- Assets/Audio/MakeItRainLoop.ogg
+- Assets/Audio/StarGet2.ogg
+- Assets/Audio/Phone It In.ogg
+- Assets/Audio/PeaceAndTranquility.ogg
+- Assets/Audio/PeaceAndTranquility2.ogg
+- Assets/Audio/Tidy.ogg
+- Assets/Audio/TeddyLoid - ME!ME!ME! feat. Daoko.ogg
+- Assets/Audio/Summertime.ogg
+- Assets/Audio/Specialist.ogg
+- Assets/Audio/Rollie.ogg
+- Assets/Audio/SpringLoaded.ogg
+- Assets/Audio/Penguin.ogg
+- Assets/Audio/Thicc.ogg
+- Assets/Audio/MikuJug.ogg
+- Assets/Audio/RumbiOwMyCircuit.ogg
+- Assets/Audio/Overdrive.ogg
+- Assets/Audio/PeaceAndTranquilitySlow.ogg
+- Assets/Audio/MoveIt.ogg
+- Assets/Audio/Shufflin.ogg
+- Assets/Audio/VSWORLD.ogg
+- Assets/Audio/TakeOnMe.ogg
+- Assets/Audio/Springy.ogg
+- Assets/Audio/Trombonetauntv2.ogg
+- Assets/Audio/Scenario.ogg
+- Assets/Audio/starget6.ogg
+- Assets/Audio/Security.ogg
+- Assets/Audio/Savage.ogg
+- Assets/Audio/Thriller.ogg
+- Assets/Audio/MakeItRainIntro.ogg
+- Assets/Audio/TheRobot.ogg
+- Assets/Audio/MetalJug.ogg
+- Assets/Audio/Smoke-old1.ogg
+- Assets/Audio/starget4.ogg
+- Assets/Audio/Trainloop.ogg
+- Assets/Audio/Macarena.ogg
+- Assets/Audio/Smoke.ogg
+- Assets/Audio/Wess.ogg
+- Assets/Audio/PopLock.ogg
+- Assets/Audio/Sway.ogg
+- Assets/Audio/Toosie.ogg
+- Assets/Audio/TakeTheL.ogg
+- Assets/Audio/Mario here we go.ogg
+- Assets/Audio/Wah Wah Wahhhh (Sound Effect).ogg
+- Assets/Audio/Yakuza.ogg
+- Assets/Audio/RumbiOw.ogg
+- Assets/Audio/starget3.ogg
+- Assets/Audio/SquatKick.ogg
+Dependencies: []

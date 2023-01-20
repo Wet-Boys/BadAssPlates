@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2393453632
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: badassemotes
+      Dependencies: {}
+    Info_1:
+      Name: audio 2
+      Dependencies: {}
+    Info_2:
+      Name: audio
+      Dependencies: {}
+    Info_3:
+      Name: ds3
+      Dependencies: {}
+    Info_4:
+      Name: css
+      Dependencies: {}

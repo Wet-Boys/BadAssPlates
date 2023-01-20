@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
 using UnityEngine;
 
@@ -34,13 +33,14 @@ public class ParticleSystemRampGenerator : MonoBehaviour {
         {
             UpdateRampTexture();
         }
-        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < activeProcedrualGradientRamp.Length; i++)
         {
-            sb.Append($"ramp.activeProcedrualGradientRamp[{i}].alphaKeys = new GradientAlphaKey[] {{");
+            Gradient grad;
+            StringBuilder sb = new StringBuilder();
+            sb.Append("ramp.activeProcedrualGradientRamp[i].alphaKeys = new GradientAlphaKey[] {");
             foreach (var item in activeProcedrualGradientRamp[i].alphaKeys)
             {
-                sb.Append($"new GradientAlphaKey({item.alpha}f, {item.time}f)");
+                sb.Append($"new GradientAlphaKey({item.alpha}, {item.time})");
                 if (item.time != activeProcedrualGradientRamp[i].alphaKeys[activeProcedrualGradientRamp[i].alphaKeys.Length - 1].time)
                 {
                     sb.Append(',');
@@ -49,18 +49,19 @@ public class ParticleSystemRampGenerator : MonoBehaviour {
             sb.Append("};\n");
 
 
-            sb.Append($"ramp.activeProcedrualGradientRamp[{i}].colorKeys = new GradientColorKey[] {{");
+            sb.Append("ramp.activeProcedrualGradientRamp[i].colorKeys = new GradientAlphaKey[] {");
             foreach (var item in activeProcedrualGradientRamp[i].colorKeys)
             {
-                sb.Append($"new GradientColorKey(new Color({item.color.r}f, {item.color.g}f, {item.color.b}f, {item.color.a}f), {item.time}f)");
+              
+                sb.Append($"new GradientAlphaKey({item.color}, {item.time})");
                 if (item.time != activeProcedrualGradientRamp[i].colorKeys[activeProcedrualGradientRamp[i].colorKeys.Length - 1].time)
                 {
                     sb.Append(',');
                 }
             }
-            sb.Append("};\n\n");
+            sb.Append("};");
+            Debug.Log(sb.ToString());
         }
-        File.WriteAllText("Pain.txt", sb.ToString());
     }
 
     void SetActiveRamp(Gradient grad)
