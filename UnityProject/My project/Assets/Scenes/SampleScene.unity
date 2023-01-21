@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ifustagebase
       objectReference: {fileID: 0}
+    - target: {fileID: 2683861134732015556, guid: 2c54af3b2c920574288929aa0a310c81, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b6bcab02b264d8747b09aa9f139ba9be, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c54af3b2c920574288929aa0a310c81, type: 3}
 --- !u!1001 &371638680

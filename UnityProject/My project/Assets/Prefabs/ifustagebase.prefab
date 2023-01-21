@@ -5051,7 +5051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788777f663490a248a9ab23fe0899bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPosition: {fileID: 0}
+  audioPosition: {fileID: 2683861134732015559}
   LPaSourse: {fileID: 2683861134732015557}
   useBuffer: 1
   firstAndLastPixelBlack: 1
@@ -5507,12 +5507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affectors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2683861133073661128}
 --- !u!1 &2683861132813235151
 GameObject:
   m_ObjectHideFlags: 0
