@@ -35,6 +35,8 @@ public class PlateUpMod : IModInitializer
         AddAnimation("Assets/BadAssEmotes/Summertime.anim", "Assets/Audio/Summertime.ogg", false, true, true);
         AddAnimation("Assets/BadAssEmotes/HondaStep.anim", "Assets/Audio/HondaStep.ogg", false, true, true);
 
+        AddAnimation("Assets/BadAssEmotes/MakeItRainIntro.anim", "Assets/BadAssEmotes/MakeItRainLoop.anim", "Assets/Audio/MakeItRainLoop.ogg", true, true);
+
         PlateUpEmotesManager.AnimationChanged += PlateUpEmotesManager_AnimationChanged;
     }
 
@@ -68,6 +70,15 @@ public class PlateUpMod : IModInitializer
             mapper.props.Add(myNutz);
             //mapper.ScaleProps();
         }
+        if (newAnimation == "MakeItRainIntro")
+        {
+            prop1 = mapper.props.Count;
+            mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("@BadAssEmotes_badassemotes:assets/Prefabs/money.prefab")));
+            mapper.props[prop1].transform.SetParent(mapper.transform.parent);
+            mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
+            mapper.props[prop1].transform.localPosition = Vector3.zero;
+            mapper.ScaleProps();
+        }
     }
 
     public void PreInject()
@@ -87,6 +98,18 @@ public class PlateUpMod : IModInitializer
         clipParams.animationClip = new AnimationClip[] { Assets.Load<AnimationClip>(AnimClip) };
         clipParams.audioClips.Add(Assets.Load<AudioClip>(wwise));
         clipParams.looping = looping;
+        clipParams.syncAnim = sync;
+        clipParams.syncAudio = sync;
+        clipParams.dimAudio = dimAudio;
+        PlateUpEmotesManager.AddCustomAnimation(clipParams);
+    }
+    internal void AddAnimation(string AnimClip, string secondaryAnimClip, string wwise, bool dimAudio, bool sync)
+    {
+        AnimationClipParams clipParams = new AnimationClipParams();
+        clipParams.animationClip = new AnimationClip[] { Assets.Load<AnimationClip>(AnimClip) };
+        clipParams.secondaryAnimation = new AnimationClip[] { Assets.Load<AnimationClip>(secondaryAnimClip) };
+        clipParams.audioClips.Add(Assets.Load<AudioClip>(wwise));
+        clipParams.looping = true;
         clipParams.syncAnim = sync;
         clipParams.syncAudio = sync;
         clipParams.dimAudio = dimAudio;
