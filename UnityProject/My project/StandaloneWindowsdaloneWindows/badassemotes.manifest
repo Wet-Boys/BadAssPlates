@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2937290211
+CRC: 3528970080
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6fa41a3fd098612cb88695a3bbf68d3f
+    Hash: 4f0749383cd8587a232a75a40fa19aee
   TypeTreeHash:
     serializedVersion: 2
-    Hash: adbb0c91e166571cbabf3036726c6565
+    Hash: c8405d02788b0ffa7c824905f13cd669
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -44,23 +44,23 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 150aed21b87a0ec4583f996364f2d014, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 40c9a327a0b28244ea89603f7028a920, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: c4bf52dff9761aa4ba376ca5ee091407, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 788777f663490a248a9ab23fe0899bbf, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: f847caa0bdea81b4aa75c794a8090874, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  Script: {fileID: 11500000, guid: c4bf52dff9761aa4ba376ca5ee091407, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 788777f663490a248a9ab23fe0899bbf, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f847caa0bdea81b4aa75c794a8090874, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 137
@@ -87,14 +87,12 @@ Assets:
 - Assets/BadAssEmotes/Goopie.anim
 - Assets/BadAssEmotes/Renegade.anim
 - Assets/BadAssEmotes/DanceMoves.anim
-- Assets/BadAssEmotes/ifuright.anim
 - Assets/BadAssEmotes/OldSchool.anim
 - Assets/BadAssEmotes/GetDown.anim
 - Assets/BadAssEmotes/DontStart.anim
-- Assets/BadAssEmotes/DesertRivers.anim
+- Assets/BadAssEmotes/PPmusic.anim
 - Assets/BadAssEmotes/PoseJeice.anim
 - Assets/BadAssEmotes/FlamencoLoop.anim
-- Assets/BadAssEmotes/PPmusic.anim
 - Assets/BadAssEmotes/Toosie.anim
 - Assets/BadAssEmotes/MakeItRainLoop.anim
 - Assets/BadAssEmotes/GangnamStyle.anim
@@ -104,7 +102,6 @@ Assets:
 - Assets/BadAssEmotes/Trainloop.anim
 - Assets/Prefabs/Starfield.prefab
 - Assets/Prefabs/neversee.prefab
-- Assets/BadAssEmotes/ifeleft.anim
 - Assets/BadAssEmotes/Smoke.anim
 - Assets/BadAssEmotes/JackOPose.anim
 - Assets/BadAssEmotes/Savage.anim
@@ -115,7 +112,6 @@ Assets:
 - Assets/Prefabs/Amogus.prefab
 - Assets/BadAssEmotes/Hi.anim
 - Assets/BadAssEmotes/VSWORLD.anim
-- Assets/BadAssEmotes/GGGG3.anim
 - Assets/BadAssEmotes/Droop.anim
 - Assets/BadAssEmotes/ItsDynamite.anim
 - Assets/Prefabs/Money.prefab
@@ -200,9 +196,7 @@ Assets:
 - Assets/BadAssEmotes/FlamencoIntro.anim
 - Assets/BadAssEmotes/SuperIdol.anim
 - Assets/BadAssEmotes/BestMates.anim
-- Assets/BadAssEmotes/ChugJug.anim
 - Assets/BadAssEmotes/Yamcha.anim
-- Assets/BadAssEmotes/LetsDanceBoys.anim
 - Assets/BadAssEmotes/PPmusicFollow.anim
 - Assets/BadAssEmotes/Yakuza.anim
 - Assets/BadAssEmotes/Wess.anim
@@ -210,7 +204,6 @@ Assets:
 - Assets/BadAssEmotes/Springy.anim
 - Assets/BadAssEmotes/FancyFeet.anim
 - Assets/BadAssEmotes/PopLock.anim
-- Assets/BadAssEmotes/ifu.anim
 - Assets/BadAssEmotes/PhoneItIn.anim
 - Assets/BadAssEmotes/GGGG.anim
 - Assets/BadAssEmotes/Extraterrestial.anim

@@ -9,10 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LivingParticleFloor_11Audio
   m_Shader: {fileID: 4800000, guid: 31d9548eab670664195ca0b4dc828361, type: 3}
-  m_ShaderKeywords: _AUDIOAMPLITUDEENABLED1_ON _AUDIOAMPLITUDEENABLED_ON _AUDIOMASKENABLED1_ON
-    _AUDIOSPECTRUMENABLED1_ON _AUDIOSPECTRUMENABLED_ON _CAMERAFADEENABLED_ON _CLOSEFADEENABLED_ON
-    _KEYWORD0_ON _LOCKYOFFSET_ON _METALLICSMOOTHNESSRANDOMOFFSET_ON _OFFSETYLOCK_ON
-    _RAMPENABLED_ON _USEPIXELDISTANCE_ON
+  m_ShaderKeywords: _AUDIOAMPLITUDEENABLED1_ON _AUDIOAMPLITUDEENABLED_ON _AUDIOSPECTRUMENABLED_ON
+    _CAMERAFADEENABLED_ON _CLOSEFADEENABLED_ON _KEYWORD0_ON _LOCKYOFFSET_ON _METALLICSMOOTHNESSRANDOMOFFSET_ON
+    _OFFSETYLOCK_ON _RAMPENABLED_ON _USEPIXELDISTANCE_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -124,23 +123,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AudioAmplitudeEmissionPower: 1
-    - _AudioAmplitudeEmissionPower1: 1
+    - _AudioAmplitudeEmissionPower1: 2.33
     - _AudioAmplitudeEnabled: 1
     - _AudioAmplitudeEnabled1: 1
     - _AudioAmplitudeOffsetPower: 1
-    - _AudioAmplitudeOffsetPower1: 1
+    - _AudioAmplitudeOffsetPower1: 2.26
     - _AudioMaskAffectsAmplitude: 0
-    - _AudioMaskAffectsAmplitude1: 0.536
+    - _AudioMaskAffectsAmplitude1: 1
     - _AudioMaskEnabled: 0
-    - _AudioMaskEnabled1: 1
+    - _AudioMaskEnabled1: 0
     - _AudioMaskExp: 1
-    - _AudioMaskExp1: 2.71
+    - _AudioMaskExp1: 4
     - _AudioMaskMultiply: 1
-    - _AudioMaskMultiply1: 2.79
+    - _AudioMaskMultiply1: 2.99
     - _AudioSpectrumDistanceTiling: 4
     - _AudioSpectrumDistanceTiling1: -1.93
     - _AudioSpectrumEnabled: 1
-    - _AudioSpectrumEnabled1: 1
+    - _AudioSpectrumEnabled1: 0
     - _AudioSpectrumPower: 1
     - _AudioSpectrumPower1: 0.431
     - _CameraFadeDistance: 1
@@ -148,8 +147,8 @@ Material:
     - _CameraFadeOffset: 0.2
     - _CloseFadeDistance: 0.75
     - _CloseFadeEnabled: 1
-    - _Distance: 1.6
-    - _DistancePower: 2.82
+    - _Distance: 3.14
+    - _DistancePower: 3.3
     - _FadeCloseDistance: 0.65
     - _FinalExp: 2
     - _FinalMaskMultiply: 3
@@ -167,7 +166,7 @@ Material:
     - _NoiseDistortionScrollSpeed: 0.04
     - _NoisePower: 6.9
     - _NoiseTiling: 0.05
-    - _OffsetPower: -0.75
+    - _OffsetPower: 0.4
     - _OffsetYLock: 1
     - _RampEnabled: 1
     - _SPECULAR_IOR: 1.5
