@@ -7,6 +7,8 @@ using Unity.Mathematics;
 using static HarmonyLib.Code;
 using Unity.Jobs;
 using UnityEngine.Animations;
+using static Cinemachine.CinemachineCore;
+using UnityEngine.UIElements;
 
 namespace PlateUpModTemplate;
 
@@ -16,6 +18,8 @@ public class PlateUpMod : IModInitializer
     public const string MOD_NAME = "MOD_NAME";
     public const string MOD_ID = $"com.{AUTHOR}.{MOD_NAME}";
     int prop1 = -1;
+    int stageInt = -1;
+    internal static GameObject stage;
     public void PostActivate(Mod mod)
     {
         Harmony.DEBUG = true;
@@ -34,8 +38,24 @@ public class PlateUpMod : IModInitializer
         //AddAnimation("Assets/BadAssEmotes/GetDown.anim", "Assets/Audio/GetDown.ogg", false, true, true);
         AddAnimation("Assets/BadAssEmotes/Summertime.anim", "Assets/Audio/Summertime.ogg", false, true, true);
         AddAnimation("Assets/BadAssEmotes/HondaStep.anim", "Assets/Audio/HondaStep.ogg", false, true, true);
+        AddAnimation("Assets/BadAssEmotes/Chika.anim", "Assets/Audio/Chika.ogg", false, true, true);
+
 
         AddAnimation("Assets/BadAssEmotes/MakeItRainIntro.anim", "Assets/BadAssEmotes/MakeItRainLoop.anim", "Assets/Audio/MakeItRainLoop.ogg", true, true);
+
+        AddAnimation("Assets/BadAssEmotes/Security.anim", "Assets/Audio/Security.ogg", true, true, true);
+        AddAnimation("Assets/BadAssEmotes/Smoke.anim", "Assets/Audio/Smoke.ogg", true, true, true);
+        AddAnimation("Assets/BadAssEmotes/BimBamBom.anim", "Assets/Audio/BimBamBom.ogg", true, true, true);
+
+
+        //PlateUpEmotesManager.AddNonAnimatingEmote("IFU Stage");
+        //GameObject g2 = Assets.Load<GameObject>($"assets/prefabs/ifustagebasebased.prefab");
+        //stageInt = PlateUpEmotesManager.RegisterWorldProp(g2, new JoinSpot[] { new JoinSpot("ifumiddle", new Vector3(0, .4f, 0)), new JoinSpot("ifeleft", new Vector3(-2, .4f, 0)), new JoinSpot("ifuright", new Vector3(2, .4f, 0)) });
+
+
+        //CustomEmotesAPI.AddCustomAnimation(new AnimationClip[] { Assets.Load<AnimationClip>($"@ExampleEmotePlugin_badassemotes:assets/badassemotes/Haruhi.anim") }, false, new string[] { "Play_Haruhi", "Play_HaruhiYoung" }, new string[] { "Stop_Haruhi", "Stop_Haruhi" }, dimWhenClose: true, syncAnim: true, syncAudio: true, startPref: 0, joinPref: 0, joinSpots: new JoinSpot[] { new JoinSpot("Yuki_Nagato", new Vector3(3, 0, -3)), new JoinSpot("Mikuru_Asahina", new Vector3(-3, 0, -3)) });
+        //CustomEmotesAPI.AddCustomAnimation(new AnimationClip[] { Assets.Load<AnimationClip>($"@ExampleEmotePlugin_badassemotes:assets/badassemotes/Yuki_Nagato.anim") }, false, "", visible: false, syncAnim: true);
+        //CustomEmotesAPI.AddCustomAnimation(new AnimationClip[] { Assets.Load<AnimationClip>($"@ExampleEmotePlugin_badassemotes:assets/badassemotes/Mikuru_Asahina.anim") }, false, "", visible: false, syncAnim: true);
 
         PlateUpEmotesManager.AnimationChanged += PlateUpEmotesManager_AnimationChanged;
     }
@@ -45,13 +65,15 @@ public class PlateUpMod : IModInitializer
         if (newAnimation == "Summertime")
         {
             prop1 = mapper.props.Count;
+            //mapper.props.Add(GameObject.CreatePrimitive(PrimitiveType.Capsule));
             mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("Assets/Prefabs/Summermogus.prefab")));
+
             mapper.props[prop1].transform.SetParent(mapper.transform.parent);
             mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
             mapper.props[prop1].transform.localPosition = Vector3.zero;
             mapper.ScaleProps();
             var smr = mapper.props[prop1].GetComponentInChildren<SkinnedMeshRenderer>();
-            Debug.Log($"{smr.isVisible}");
+            Debug.Log($"summermogus shader name is: {smr.material.shader.name}");
         }
         if (newAnimation == "HondaStep")
         {
@@ -79,6 +101,69 @@ public class PlateUpMod : IModInitializer
             mapper.props[prop1].transform.localPosition = Vector3.zero;
             mapper.ScaleProps();
         }
+        if (newAnimation == "Chika")
+        {
+            prop1 = mapper.props.Count;
+            mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("@BadAssEmotes_badassemotes:assets/models/desker.prefab")));
+            mapper.props[prop1].transform.SetParent(mapper.transform.parent);
+            mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
+            mapper.props[prop1].transform.localPosition = Vector3.zero;
+            mapper.ScaleProps();
+        }
+        if (newAnimation == "BimBamBom")
+        {
+            prop1 = mapper.props.Count;
+            mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("@BadAssEmotes_badassemotes:assets/Prefabs/BimBamBom.prefab")));
+            mapper.props[prop1].transform.SetParent(mapper.transform.parent);
+            mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
+            mapper.props[prop1].transform.localPosition = Vector3.zero;
+            mapper.ScaleProps();
+        }
+        if (newAnimation == "Smoke")
+        {
+            prop1 = mapper.props.Count;
+            mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("@BadAssEmotes_badassemotes:assets/Prefabs/BluntAnimator.prefab")));
+            mapper.props[prop1].transform.SetParent(mapper.transform.parent);
+            mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
+            mapper.props[prop1].transform.localPosition = Vector3.zero;
+            mapper.props[prop1].GetComponentInChildren<ParticleSystem>().gravityModifier *= mapper.scale;
+            var velocity = mapper.props[prop1].GetComponentInChildren<ParticleSystem>().limitVelocityOverLifetime;
+            velocity.dampen *= mapper.scale;
+            velocity.limitMultiplier = mapper.scale;
+            mapper.ScaleProps();
+        }
+        if (newAnimation == "Haruhi")
+        {
+            GameObject g = new GameObject();
+            g.name = "HaruhiProp";
+            mapper.props.Add(g);
+            g.transform.localPosition = mapper.transform.position;
+            g.transform.localEulerAngles = mapper.transform.eulerAngles;
+            g.transform.localScale = Vector3.one;
+            mapper.AssignParentGameObject(g, false, false, true, true, false);
+        }
+        if (newAnimation == "Security")
+        {
+            prop1 = mapper.props.Count;
+            mapper.props.Add(GameObject.Instantiate(Assets.Load<GameObject>("@BadAssEmotes_badassemotes:assets/prefabs/neversee.prefab")));
+            mapper.props[prop1].transform.SetParent(mapper.gameObject.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.Spine));
+            mapper.props[prop1].transform.localEulerAngles = Vector3.zero;
+            mapper.props[prop1].transform.localPosition = Vector3.zero;
+            mapper.ScaleProps();
+        }
+        //if (newAnimation == "IFU Stage")
+        //{
+        //    if (stage)
+        //    {
+        //        GameObject.Destroy(stage);
+        //    }
+        //    stage = CustomEmotesAPI.SpawnWorldProp(stageInt);
+        //    stage.transform.SetParent(mapper.transform.parent);
+        //    stage.transform.localPosition = new Vector3(0, 0, 0);
+        //    stage.transform.SetParent(null);
+        //    stage.transform.localPosition += new Vector3(0, .5f, 0);
+        //    NetworkServer.Spawn(stage);
+        //}
     }
 
     public void PreInject()
